@@ -16,10 +16,13 @@
     "tests"
   ],
   "dependencies": {
-    "bebas-neue-regular-webfont": "*",
     "bootstrap-sass": "~3.3.5",
-    "learning-curve-pro-webfont": "*",
     "modernizr": "~2.8.3",
-    "pacifico-webfont": "*"
+    "animate.css": "~3.4.0",
+    "font-awesome": "~4.4.0",
+    "normalize.css": "~3.0.3",
+    "jquery.easing": "~1.3.1",
+    "wow": "~1.1.2",
+    "FitText.js": "~1.2.0"
   }
 }
