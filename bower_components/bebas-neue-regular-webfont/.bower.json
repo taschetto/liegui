@@ -1,0 +1,36 @@
+{
+  "name": "bebas-neue-regular-webfont",
+  "authors": [
+    "Soham Banerjee <soham2008xyz@gmail.com>"
+  ],
+  "description": "The Bebas Neue web font, packaged for Bower",
+  "main": "font.css",
+  "keywords": [
+    "bebas",
+    "neue",
+    "webfont"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/soham2008xyz/bebas-neue-regular-webfont",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "*.png",
+    "index.html",
+    "readme.txt",
+    "README.md"
+  ],
+  "_release": "a8a79f28c2",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "a8a79f28c250f74ad03f3abf1e72e28a8404ac25"
+  },
+  "_source": "git://github.com/soham2008xyz/bebas-neue-regular-webfont.git",
+  "_target": "*",
+  "_originalSource": "bebas-neue-regular-webfont",
+  "_direct": true
+}
