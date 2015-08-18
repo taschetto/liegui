@@ -1,0 +1,20 @@
+---
+---
+@charset "utf-8";
+
+/* path to glyphicons */
+$icon-font-path: "/bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+/* custom variable */
+$my-green: #29a873;
+$my-teal: #90d1b5;
+$my-brown: #c8ac81;
+$my-red: #ef7661;
+$my-white: #ffffff;
+$body-bg: $my-red;
+
+@import "base",
+        "../bower_components/pacifico-webfont/font.css",
+        "../bower_components/learning-curve-pro-webfont/font.css",
+        "../bower_components/bebas-neue-regular-webfont/font.css",
+        "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";

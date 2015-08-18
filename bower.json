@@ -1,0 +1,25 @@
+{
+  "name": "liegui",
+  "version": "0.0.0",
+  "authors": [
+    "Guilherme Taschetto <gtaschetto@gmail.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bebas-neue-regular-webfont": "*",
+    "bootstrap-sass": "~3.3.5",
+    "learning-curve-pro-webfont": "*",
+    "modernizr": "~2.8.3",
+    "pacifico-webfont": "*"
+  }
+}
