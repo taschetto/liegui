@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Michael';
+    src: url('Michael.otf')  format('opentype'),
+         url('Michael.woff') format('woff'),
+         url('Michael.ttf')  format('truetype'),
+         url('Michael.svg#Michael') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

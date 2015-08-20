@@ -204,8 +204,18 @@ header .header-content {
 header .header-content .header-content-inner h1 {
     margin-top: 0;
     margin-bottom: 0;
-    text-transform: uppercase;
-    font-weight: 700;
+    font-size: 100px !important;
+    font-family: 'Michael' !important;
+}
+
+header .header-content .header-content-inner h2 {
+    font-size: 50px !important;
+    font-family: 'MangoSmoothie';
+}
+
+header .header-content .header-content-inner h3 {
+    font-size: 50px !important;
+    font-family: 'Michael';
 }
 
 header .header-content .header-content-inner hr {

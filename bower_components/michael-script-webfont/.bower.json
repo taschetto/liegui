@@ -1,0 +1,31 @@
+{
+  "name": "michael-script-webfont",
+  "authors": [
+    "Guilherme Taschetto <gtaschetto@gmail.com>"
+  ],
+  "description": "The Michael Script web font, packaged for Bower",
+  "main": "font.css",
+  "keywords": [
+    "michael script",
+    "web font"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/taschetto/michael-script-webfont",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "README.md"
+  ],
+  "_release": "f69905691a",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f69905691af68e77831a3ab75ccaa25f6cc8d60b"
+  },
+  "_source": "https://github.com/taschetto/michael-script-webfont.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/taschetto/michael-script-webfont.git"
+}

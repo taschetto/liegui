@@ -1,0 +1,34 @@
+{
+  "name": "michael-ornaments-webfont",
+  "authors": [
+    "Guilherme Taschetto <gtaschetto@gmail.com>"
+  ],
+  "description": "The Michael Ornaments web font, packaged for Bower",
+  "main": "font.css",
+  "keywords": [
+    "\"michael",
+    "ornaments\"",
+    "\"web",
+    "font\""
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/taschetto/michael-ornaments-webfont",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "README.md"
+  ],
+  "_release": "0ed93bc5da",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "0ed93bc5da2eb13a563969bf355b0987c48c8b9f"
+  },
+  "_source": "https://github.com/taschetto/michael-ornaments-webfont.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/taschetto/michael-ornaments-webfont.git",
+  "_direct": true
+}

@@ -1,0 +1,32 @@
+{
+  "name": "mango-smoothie-webfont",
+  "authors": [
+    "Guilherme Taschetto <gtaschetto@gmail.com>"
+  ],
+  "description": "The Mango Smoothie webfont, packaged for Bower",
+  "main": "font.css",
+  "keywords": [
+    "mango smoothie",
+    "web font"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/taschetto/mango-smoothie-webfont",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "README.md"
+  ],
+  "_release": "4b83c6e1ac",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "4b83c6e1ac3bb2237ed33a0957e4ec40750cf636"
+  },
+  "_source": "https://github.com/taschetto/mango-smoothie-webfont.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/taschetto/mango-smoothie-webfont.git",
+  "_direct": true
+}
