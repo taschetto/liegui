@@ -20,10 +20,6 @@ hr {
     border-width: 3px;
 }
 
-hr.secondary {
-    border-color: $wedding-teal;
-}
-
 hr.light {
     border-color: #fff;
 }
@@ -57,10 +53,6 @@ p {
 
 .bg-primary {
     background-color: $wedding-red;
-}
-
-.bg-secondary {
-    background-color: $wedding-teal;
 }
 
 .bg-dark {
@@ -186,7 +178,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(/img/header.jpg);
+    background-image: url(../img/header.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -204,18 +196,8 @@ header .header-content {
 header .header-content .header-content-inner h1 {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 100px !important;
-    font-family: 'Michael' !important;
-}
-
-header .header-content .header-content-inner h2 {
-    font-size: 50px !important;
-    font-family: 'MangoSmoothie';
-}
-
-header .header-content .header-content-inner h3 {
-    font-size: 50px !important;
-    font-family: 'Michael';
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 header .header-content .header-content-inner hr {
@@ -224,8 +206,9 @@ header .header-content .header-content-inner hr {
 
 header .header-content .header-content-inner p {
     margin-bottom: 50px;
-    font-size: 36px !important;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,.7);
 }
 
 @media(min-width:768px) {
@@ -341,10 +324,6 @@ header .header-content .header-content-inner p {
 
 .text-primary {
     color: $wedding-red;
-}
-
-.text-secondary {
-    color: $wedding-teal;
 }
 
 .no-gutter > [class*=col-] {
@@ -494,8 +473,4 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
-}
-
-small, .small {
-    font-size: 70%;
 }
