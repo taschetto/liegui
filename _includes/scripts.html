@@ -3,4 +3,27 @@
         <script src="/bower_components/jquery.easing/js/jquery.easing.min.js"></script>
         <script src="/bower_components/FitText.js/jquery.fittext.js"></script>
         <script src="/bower_components/wow/dist/wow.min.js"></script>
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="/bower_components/gmaps/gmaps.min.js"></script>
         <script src="/js/creative.js"></script>
+
+          <script>
+            var map = new GMaps({
+              el: '#map',
+              lat: -30.0611096,
+              lng: -51.172325,
+              zoom: 17
+            });
+
+            map.addMarker({
+              lat: -30.0611096,
+              lng: -51.172325,
+              title: 'Lima',
+              infoWindow: {
+                content: '<p>HTML Content</p>'
+              },
+              click: function(e) {
+                map.setCenter(-30.0611096, -51.172325);
+              }
+            });
+          </script>

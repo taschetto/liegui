@@ -10,6 +10,14 @@ share_title: Lívia & Guilherme vão se casar!
 share_description: Nosso site!
 share_image: /img/header.jpg
 
+# Google Maps and contact information
+latitude: -30.010932094173654
+longitude: -51.171792447566986
+full_address: Av. Tapiaçu, 310, sala 408 - Passo d'Areia - Porto Alegre - RS - CEP 91030-080
+address: Av. Tapiaçu, 310, sala 408 - Porto Alegre - RS - CEP 91030-080
+phone: (51) 3209-2701
+email: contato@fator7.com.br
+
 # Build settings
 markdown: kramdown
 analytics: UA-66337185-1

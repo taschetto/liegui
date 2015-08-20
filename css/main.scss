@@ -3,13 +3,19 @@
 
 @charset "utf-8";
 
-$my-green: #29a873;
-$my-teal:  #90d1b5;
-$my-brown: #c8ac81;
-$my-red:   #ef7661;
-$my-white: #ffffff;
+$wedding-brown: #c8ac81;
+$wedding-green: #29a873;
+$wedding-teal:  #90d1b5;
+$wedding-red:   #f05f40;
+$stronger-red:  #eb3812;
 
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap",
         "../bower_components/font-awesome/css/font-awesome.min.css",
         "../bower_components/animate.css/animate.min.css",
         "creative";
+
+#map {
+  width: 650px;
+  height: 370px;
+  max-width: 100%;
+}
