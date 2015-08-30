@@ -26,6 +26,10 @@ h6 {
     font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif;
 }
 
+.ornament {
+    font-family: 'Michael Ornaments';
+}
+
 header {
     background-image: url(/img/header.jpg);
 }
@@ -133,6 +137,7 @@ small, .small {
 @media(min-width:768px) {
     section {
         min-height: 100% !important;
+        max-height: 100% !important;
     }
 
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
