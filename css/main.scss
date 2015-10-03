@@ -15,15 +15,20 @@ $stronger-red:  #eb3812;
         "../bower_components/michael-script-webfont/font.css",
         "../bower_components/michael-ornaments-webfont/font.css",
         "../bower_components/mango-smoothie-webfont/font.css",
+        "https://fonts.googleapis.com/css?family=Roboto+Slab",
         "creative";
 
+body,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-    font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif;
+h6,
+.navbar-default,
+.navbar-default .navbar-header .navbar-brand,
+.btn {
+    font-family: 'Roboto Slab', serif;
 }
 
 .ornament {
@@ -61,6 +66,9 @@ h2.section-heading {
     font-family: 'MangoSmoothie';
 }
 
+.shadow {
+    text-shadow: 0px 2px 5px #000;
+}
 
 .bg-secondary {
     background-color: $wedding-teal;
@@ -123,7 +131,7 @@ small, .small {
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: 'MangoSmoothie', 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'MangoSmoothie', sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
@@ -136,11 +144,24 @@ small, .small {
 
 @media(min-width:768px) {
     section {
-        min-height: 100% !important;
-        max-height: 100% !important;
+        /*min-height: 100% !important;*/
+        /*max-height: 100% !important;*/
     }
 
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
         font-size: 22px;
     }
+}
+
+/* Carousel base class */
+.carousel {
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  background-color: #777;
 }
