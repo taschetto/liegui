@@ -15,8 +15,8 @@ $button-primary-hover-font: $bg-primary;
 
 $button-default:            #eee;
 $button-default-font:       $bg-primary;
-$button-default-hover:      $bg-primary;
-$button-default-hover-font: #fff;
+$button-default-hover:      $bg-secondary;
+$button-default-hover-font: #333;
 
 $primary-links:             $bg-primary;
 
@@ -32,6 +32,14 @@ $padrinhos:                 rgba($bg-secondary, .7);
         "../bower_components/mango-smoothie-webfont/font.css",
         "https://fonts.googleapis.com/css?family=Roboto+Slab",
         "creative";
+
+.btn-primary:active {
+  background-color: $bg-secondary !important
+}
+
+.btn-default:active {
+  background-color: $bg-primary !important
+}
 
 body,
 h1,
