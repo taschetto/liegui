@@ -7,6 +7,7 @@
 
 $bg-primary:                #ff4c41;
 $bg-secondary:              #ffea34;
+$bg-dark:                   #0080FF;
 
 $button-primary:            $bg-primary;
 $button-primary-font:       #fff;
@@ -20,8 +21,8 @@ $button-default-hover-font: #333;
 
 $primary-links:             $bg-primary;
 
-$madrinhas:                 rgba($bg-primary, .7);
-$padrinhos:                 rgba($bg-secondary, .7);
+$madrinhas:                 rgba($bg-primary, .8);
+$padrinhos:                 rgba($bg-dark, .8);
 
 
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap",
@@ -120,7 +121,7 @@ h2.section-heading {
 }
 
 .text-secondary {
-  color: teal;
+  color: $bg-dark;
 }
 
 /* Carousel */
@@ -134,13 +135,11 @@ h2.section-heading {
   }
 }
 
-/* Carousel Control */
 .carousel-control {
   top: 43%;
   font-size: 48px;
 }
 
-/* Animation */
 .control-box, a.carousel-control, .carousel-indicators li {
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
@@ -149,69 +148,44 @@ h2.section-heading {
   transition: all 250ms ease;
 }
 
-/* Removing BS background */
-.carousel .control-box { opacity: 0; }
 a.carousel-control.left  { left: 0; background: none; border: 0;}
 a.carousel-control.right { right: 0; background: none; border: 0;}
 
-/* Hover animation */
-.carousel:hover .control-box { opacity: 1; }
 .carousel:hover a.carousel-control.left { left: 15px; }
-.carousel:hover a.carousel-control.right { right: 15px; }    
+.carousel:hover a.carousel-control.right { right: 15px; }
 
-/* Carouse Indicator */
 .carousel-indicators li.active,
 .carousel-indicators li {
   border: 0;
+  width: 16px;
+  height: 16px;
 }
 
 .carousel-indicators li {
-  background: $bg-primary;
-  margin: 0 3px;
-  width: 12px;
-  height: 12px;
-}
-
-.carousel-indicators li.active {
   background: #fff;
   margin: 0 3px;
 }
 
-/* Carousel Control */
-.carousel-control {
-  top: 43%;
-  font-size: 48px;
+.carousel-indicators li.active {
+  background: $bg-primary;
+  margin: 0 3px;
 }
 
-/* Animation */
-.control-box, a.carousel-control, .carousel-indicators li {
-  -webkit-transition: all 250ms ease;
-  -moz-transition: all 250ms ease;
-  -ms-transition: all 250ms ease;
-  -o-transition: all 250ms ease;
-  transition: all 250ms ease;   
-  /* hardware acceleration will cause Bootstrap carousel controlbox margin error in webkit browsers */
-  /* Assigning animation to indicator li will make slides flicker */
+.carousel-indicators li:hover {
+  background: $bg-secondary;
+  margin: 0 3px;
 }
-
-/* Removing BS background */
-.carousel .control-box { opacity: 0; }
-a.carousel-control.left  { left: 0; background: none; border: 0;}
-a.carousel-control.right { right: 0; background: none; border: 0;}
-
-/* Hover animation */
-.carousel:hover .control-box { opacity: 1; }
-.carousel:hover a.carousel-control.left { left: 15px; }
-.carousel:hover a.carousel-control.right { right: 15px; } 
 
 /* Madrinhas e Padrinhos */
 
 #padrinhos .portfolio-box .portfolio-box-caption {
   background: $padrinhos;
+  color: #fff;
 }
 
 #madrinhas .portfolio-box .portfolio-box-caption {
   background: $madrinhas;
+  color: #fff;
 }
 
 .portfolio-box {
