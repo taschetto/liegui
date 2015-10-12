@@ -3,11 +3,26 @@
 
 @charset "utf-8";
 
-$wedding-brown: #c8ac81;
-$wedding-green: #29a873;
-$wedding-teal:  #90d1b5;
-$wedding-red:   #f05f40;
-$stronger-red:  #eb3812;
+/* #c8ac81 #29a873 #f05f40; #90d1b5 #eb3812 */
+
+$bg-primary:                #ff4c41;
+$bg-secondary:              #ffea34;
+
+$button-primary:            $bg-primary;
+$button-primary-font:       #fff;
+$button-primary-hover:      #eee;
+$button-primary-hover-font: $bg-primary;
+
+$button-default:            #eee;
+$button-default-font:       $bg-primary;
+$button-default-hover:      $bg-primary;
+$button-default-hover-font: #fff;
+
+$primary-links:             $bg-primary;
+
+$madrinhas:                 rgba($bg-primary, .7);
+$padrinhos:                 rgba($bg-secondary, .7);
+
 
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap",
         "../bower_components/font-awesome/css/font-awesome.min.css",
@@ -34,6 +49,24 @@ h6,
 .ornament {
     font-family: 'Michael Ornaments';
 }
+
+.bg-secondary {
+    background-color: $bg-secondary;
+}
+
+hr.secondary {
+    border-color: $bg-secondary;
+}
+
+.text-secondary {
+    color: $bg-secondary;
+}
+
+small, .small {
+    font-size: 70%;
+}
+
+/* Cabeçalho */
 
 header {
     background-image: url(/img/header.jpg);
@@ -70,26 +103,107 @@ h2.section-heading {
     text-shadow: 0px 2px 5px #000;
 }
 
-.bg-secondary {
-    background-color: $wedding-teal;
-}
-
-hr.secondary {
-    border-color: $wedding-teal;
-}
-
-.text-secondary {
-    color: $wedding-teal;
-}
-
-small, .small {
-    font-size: 70%;
-}
+/* Mapa */
 
 #map {
   width: 650px;
   height: 370px;
   max-width: 100%;
+}
+
+.text-secondary {
+  color: teal;
+}
+
+/* Carousel */
+
+.carousel {
+  a img { border: none; }
+  img {
+    width: 100%;
+    height:auto;
+    -ms-interpolation-mode: bicubic;
+  }
+}
+
+/* Carousel Control */
+.carousel-control {
+  top: 43%;
+  font-size: 48px;
+}
+
+/* Animation */
+.control-box, a.carousel-control, .carousel-indicators li {
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+/* Removing BS background */
+.carousel .control-box { opacity: 0; }
+a.carousel-control.left  { left: 0; background: none; border: 0;}
+a.carousel-control.right { right: 0; background: none; border: 0;}
+
+/* Hover animation */
+.carousel:hover .control-box { opacity: 1; }
+.carousel:hover a.carousel-control.left { left: 15px; }
+.carousel:hover a.carousel-control.right { right: 15px; }    
+
+/* Carouse Indicator */
+.carousel-indicators li.active,
+.carousel-indicators li {
+  border: 0;
+}
+
+.carousel-indicators li {
+  background: $bg-primary;
+  margin: 0 3px;
+  width: 12px;
+  height: 12px;
+}
+
+.carousel-indicators li.active {
+  background: #fff;
+  margin: 0 3px;
+}
+
+/* Carousel Control */
+.carousel-control {
+  top: 43%;
+  font-size: 48px;
+}
+
+/* Animation */
+.control-box, a.carousel-control, .carousel-indicators li {
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;   
+  /* hardware acceleration will cause Bootstrap carousel controlbox margin error in webkit browsers */
+  /* Assigning animation to indicator li will make slides flicker */
+}
+
+/* Removing BS background */
+.carousel .control-box { opacity: 0; }
+a.carousel-control.left  { left: 0; background: none; border: 0;}
+a.carousel-control.right { right: 0; background: none; border: 0;}
+
+/* Hover animation */
+.carousel:hover .control-box { opacity: 1; }
+.carousel:hover a.carousel-control.left { left: 15px; }
+.carousel:hover a.carousel-control.right { right: 15px; } 
+
+/* Madrinhas e Padrinhos */
+
+#padrinhos .portfolio-box .portfolio-box-caption {
+  background: $padrinhos;
+}
+
+#madrinhas .portfolio-box .portfolio-box-caption {
+  background: $madrinhas;
 }
 
 .portfolio-box {
@@ -111,14 +225,6 @@ small, .small {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
-}
-
-#padrinhos .portfolio-box .portfolio-box-caption {
-    background: rgba(144, 209, 181,.7);
-}
-
-#madrinhas .portfolio-box .portfolio-box-caption {
-    background: rgba(240, 95, 64,.7);
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
@@ -143,25 +249,7 @@ small, .small {
 }
 
 @media(min-width:768px) {
-    section {
-        /*min-height: 100% !important;*/
-        /*max-height: 100% !important;*/
-    }
-
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-        font-size: 22px;
-    }
-}
-
-/* Carousel base class */
-.carousel {
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  background-color: #777;
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 22px;
+  }
 }

@@ -5,6 +5,7 @@
         <script src="/bower_components/wow/dist/wow.min.js"></script>
         <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
         <script src="/bower_components/gmaps/gmaps.min.js"></script>
+        <script src="js/jquery.bcSwipe.min.js"></script>
         <script src="/js/creative.js"></script>
 
           <script>
@@ -25,5 +26,14 @@
               click: function(e) {
                 map.setCenter(-30.0611096, -51.172325);
               }
+            });
+
+            // Carousel Auto-Cycle
+            $(document).ready(function() {
+              var c = $('#carousel');
+              c.carousel({
+                interval: 6000
+              })
+              c.bcSwipe({ threshold: 50 });
             });
           </script>
