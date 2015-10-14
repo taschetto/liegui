@@ -40,11 +40,14 @@
             $("#confirmacao").submit(function() {
               $.ajax({
                 type: "POST",
-                url: "//formspree.io/gtaschetto@gmail.com",
+                url: "aushsd2727"
+                //url: "//formspree.io/gtaschetto@gmail.com",
                 data: $('#confirmacao').serialize(),
                 dataType: "json"
               }).done(function(data) {
                 console.log(data);
+              }).fail(function(data) {
+                console.log("error");
               });
               event.preventDefault();
             });
