@@ -46,9 +46,10 @@
                 dataType: "json"
               }).done(function(data) {
                 console.log(data);
-              }).fail(function(data) {
+              }).fail(function() {
                 console.log("error");
+              }).always(function() {
+                event.preventDefault();
               });
-              event.preventDefault();
             });
           </script>
