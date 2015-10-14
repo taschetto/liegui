@@ -50,6 +50,8 @@
                 $("#sucesso").show();
               }).fail(function() {
                 alert("Desculpe, mas ocorreu um problema. Por favor, tente enviar sua confirmação novamente.");
+                $("#confirmacao").hide();
+                $("#sucesso").show();
               });
 
               event.preventDefault();
