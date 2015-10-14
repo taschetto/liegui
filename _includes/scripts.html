@@ -50,11 +50,11 @@
               }).done(function(data) {
                 $("#confirmacao").toggle();
                 $("#sucesso").toggle();
-                $("#sucesso #nome").text(formData["nome"]);
-                $("#sucesso #adultos").text(formData["adultos"]);
-                $("#sucesso #criancas").text(formData["criancas"]);
-                $("#sucesso #email").text(formData["email"]);
-                $("#sucesso #telefone").text(formData["telefone"]);
+                $("#sucesso #nome").text($("#confirmacao #nome").val());
+                $("#sucesso #adultos").text($("#confirmacao #adultos").val());
+                $("#sucesso #criancas").text($("#confirmacao #criancas").val());
+                $("#sucesso #email").text($("#confirmacao #email").val());
+                $("#sucesso #telefone").text($("#confirmacao #telefone").val());
               }).fail(function() {
                 $("#confirmacao").toggle();
                 $("#sucesso").toggle();
