@@ -258,7 +258,8 @@ dt {
 }
 
 dt:after {
-        content: ": ";
+        content: ":";
+        margin-right: 10px;
 }
 
 dd {
