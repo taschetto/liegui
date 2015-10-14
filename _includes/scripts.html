@@ -45,11 +45,11 @@
                 data: $('#confirmacao').serialize(),
                 dataType: "json"
               }).done(function(data) {
-                $("#confirmacao").hide();
-                $("#sucesso").show();
+                $("#confirmacao").toggle();
+                $("#sucesso").toggle();
               }).fail(function() {
-                $("#confirmacao").hide();
-                $("#sucesso").show();
+                $("#confirmacao").toggle();
+                $("#sucesso").toggle();
               });
 
               event.preventDefault();
