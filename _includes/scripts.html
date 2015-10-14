@@ -40,20 +40,21 @@
             $("#sucesso").hide();
 
             $("#confirmacao").submit(function(event) {
+              var formData = $('#confirmacao').serialize();
               $.ajax({
                 type: "POST",
                 //url: "aushsd2727",
                 url: "//formspree.io/gtaschetto@gmail.com",
-                data: $('#confirmacao').serialize(),
+                data: formData,
                 dataType: "json"
               }).done(function(data) {
                 $("#confirmacao").toggle();
                 $("#sucesso").toggle();
-                $("#sucesso #nome").text("meu nome");
-                $("#sucesso #adultos").text("meu adultos");
-                $("#sucesso #criancas").text("meu criancas");
-                $("#sucesso #email").text("meu email");
-                $("#sucesso #telefone").text("meu telefone");
+                $("#sucesso #nome").text(formData["nome"]);
+                $("#sucesso #adultos").text(formData["adultos"]);
+                $("#sucesso #criancas").text(formData["criancas"]);
+                $("#sucesso #email").text(formData["email"]);
+                $("#sucesso #telefone").text(formData["telefone"]);
               }).fail(function() {
                 $("#confirmacao").toggle();
                 $("#sucesso").toggle();
