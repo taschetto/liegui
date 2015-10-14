@@ -252,9 +252,16 @@ dt, dd {
 }
 
 dt {
+        text-align: right;
         width: 50%;
+        content: ":";
+}
+
+dt:after {
+        content: ":";
 }
 
 dd {
+        text-align: left;
         width: 50%;
 }
