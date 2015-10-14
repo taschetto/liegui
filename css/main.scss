@@ -253,15 +253,15 @@ dt, dd {
 
 dt {
         text-align: right;
-        width: 50%;
+        width: 40%;
         content: ":";
 }
 
 dt:after {
-        content: ":";
+        content: ": ";
 }
 
 dd {
         text-align: left;
-        width: 50%;
+        width: 60%;
 }
