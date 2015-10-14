@@ -42,13 +42,18 @@
             $("#confirmacao").submit(function(event) {
               $.ajax({
                 type: "POST",
-                url: "aushsd2727",
-                //url: "//formspree.io/gtaschetto@gmail.com",
+                //url: "aushsd2727",
+                url: "//formspree.io/gtaschetto@gmail.com",
                 data: $('#confirmacao').serialize(),
                 dataType: "json"
               }).done(function(data) {
                 $("#confirmacao").toggle();
                 $("#sucesso").toggle();
+                $("#sucesso #nome").text("meu nome");
+                $("#sucesso #adultos").text("meu adultos");
+                $("#sucesso #criancas").text("meu criancas");
+                $("#sucesso #email").text("meu email");
+                $("#sucesso #telefone").text("meu telefone");
               }).fail(function() {
                 $("#confirmacao").toggle();
                 $("#sucesso").toggle();
