@@ -38,6 +38,12 @@
             });
             
             $("#sucesso").hide();
+            $("#erro").hide();
+            
+            $("#voltar").click(function() {
+                $("#confirmacao").toggle();
+                $("#erro").toggle();
+            });
 
             $("#confirmacao").submit(function(event) {
               var formData = $('#confirmacao').serialize();
@@ -57,7 +63,7 @@
                 $("#sucesso #telefone").text($("#confirmacao #telefone").val());
               }).fail(function() {
                 $("#confirmacao").toggle();
-                $("#sucesso").toggle();
+                $("#erro").toggle();
               });
 
               event.preventDefault();
