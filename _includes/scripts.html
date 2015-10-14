@@ -45,9 +45,11 @@
                 data: $('#confirmacao').serialize(),
                 dataType: "json"
               }).done(function(data) {
-                console.log(data);
+                alert("Sua presença foi confirmada! Muito obrigado!");
+                $("#confirmacao").hide();
+                $("#sucesso").show();
               }).fail(function() {
-                console.log("error");
+                alert("Desculpe, mas ocorreu um problema. Por favor, tente enviar sua confirmação novamente.");
               });
 
               event.preventDefault();
