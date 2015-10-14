@@ -36,4 +36,13 @@
               })
               c.bcSwipe({ threshold: 50 });
             });
+
+            $( "#enviar" ).click(function() {
+              $.ajax({
+                type: "POST",
+                url: "//formspree.io/you@email.com",
+                data: $('#confirmacao').serialize(),
+                dataType: "json"
+              });
+            });
           </script>

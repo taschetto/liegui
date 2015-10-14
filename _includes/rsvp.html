@@ -15,11 +15,81 @@
         </div>
       </div>
       <div class="col-lg-8 text-center">
-        <form action="//formspree.io/gtaschetto@gmail.com"
-              method="POST">
-          <input type="text" name="name">
-          <input type="email" name="_replyto">
-          <input type="submit" value="Send">
+        <form id="confirmacao" class="form-horizontal" action="//formspree.io/gtaschetto@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Casamento Lí e Gui - Nova confirmação!" />
+        <input type="hidden" name="_cc" value="gtaschetto@gmail.com" />
+        <input type="text" name="_gotcha" style="display:none" />
+        <fieldset>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="nome">Qual o nome que está no convite?</label>
+          <div class="col-md-6">
+          <input id="nome" name="nome" type="text" placeholder="Nome completo" class="form-control input-md" required="">
+          <span class="help-block">O nome do convite conta apenas como 1 convidado.  Se o nome do convite é de um casal (exemplo: Rafael Lima e Jordana), coloque a segunda pessoa como acompanhante. Assim, você terá a confirmação de 2 convidados.</span>
+          </div>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="adultos">Além de você, quantos adultos acompanham?</label>
+          <div class="col-md-2">
+            <select id="adultos" name="adultos" class="form-control">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="criancas">Quantas crianças acompanhantes comparecerão?</label>
+          <div class="col-md-2">
+            <select id="criancas" name="criancas" class="form-control">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="email">Qual o seu e-mail?</label>
+          <div class="col-md-5">
+          <input id="email" name="email" type="text" placeholder="nome@email.com" class="form-control input-md" required="">
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="telefone">Qual o seu telefone?</label>
+          <div class="col-md-4">
+          <input id="telefone" name="telefone" type="text" placeholder="(51) 9999-9999" class="form-control input-md" required="">
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="enviar"></label>
+          <div class="col-md-4">
+            <button id="enviar" name="enviar" class="btn btn-primary">Confirmar Presença</button>
+          </div>
+        </div>
+
+        </fieldset>
         </form>
       </div>
     </div>
