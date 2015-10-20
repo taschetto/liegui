@@ -1,120 +1,117 @@
 <section id="rsvp">
   <div class="container vcenter">
     <div class="row">
-      <div class="col-lg-4 text-center" style="margin-bottom: 20px">
+      <div class="col-lg-12 text-center">
         <h2 class="section-heading">R.S.V.P.</h2>
         <hr class="primary">
-        <p>Realize a confirmação de sua presença em nosso casamento entrando em contato com nossa cerimonialista por telefone ou por e-mail.</p>
-        <div class="service-box">
+      </div>
+      <div class="col-lg-4 text-center" style="margin-bottom: 50px">
+        <p class="text-justify">Para realizar a confirmação de sua presença em nosso casamento, utilize o formulário. Se preferir, entre em contato com nossa cerimonialista Kátia pelo telefone ou e-mail abaixo.</p>
+        <div class="service-box text-center">
           <i class="fa fa-phone fa-3x wow tada infinite"></i>
           <p>(51) 9777-8095 (celular)</p>
         </div>
-        <div class="service-box">
+        <div class="service-box text-center">
           <i class="fa fa-envelope-o fa-3x wow pulse infinite" data-wow-delay=".1s"></i>
           <p><a href="mailto:rsvp@parasempreassessoria.net">rsvp@parasempreassessoria.net</a></p>
         </div>
       </div>
-      <div id="sucesso" class="col-lg-8 text-center vcenter">
-        <h2 class="section-heading">Recebemos a sua confirmação! Obrigado!</h2>
-        <hr class="primary">
-        <p>Qualquer mudança de planos ou dúvida entre em contato com nossa cerimonialista pelo e-mail ou pelo telefone informados.
-        Confira abaixo os dados enviados da sua confirmação.</p>
-        <dl>
-          <dt>Nome</dt>    
-          <dd id="nome"></dd>
-          <dt>Adultos acompanhantes</dt>
-          <dd id="adultos"></dd>
-          <dt>Crianças acompanhantes</dt>
-          <dd id="criancas"></dd>
-          <dt>E-mail</dt>
-          <dd id="email"></dd>
-          <dt>Telefone</dt>
-          <dd id="telefone"></dd>
-        </dl>
-      </div>
-      <div id="erro" class="col-lg-8 text-center vcenter" style="height: 100%">
-        <h2 class="section-heading">Ops! Ocorreu um problema</h2>
-        <hr class="light">
-        <p>Ocorreu um problema e não conseguimos enviar a sua confirmação. Por favor, tente novamente. Caso o problema persista, tente fazer a confirmação diretamente por telefone ou por e-mail.</p>
-        <button id="voltar" class="btn btn-default btn-xl">Voltar para o formulário</button>
-      </div>
-      <div id="formulario" class="col-lg-8 text-center">
-        <form id="confirmacao" class="form-horizontal" action="//formspree.io/gtaschetto@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="Casamento Lí e Gui - Nova confirmação!" />
-        <input type="hidden" name="_cc" value="gtaschetto@gmail.com" />
-        <input type="text" name="_gotcha" style="display:none" />
-        <fieldset>
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="nome">Qual o nome que está no convite?</label>
-          <div class="col-md-6">
-          <input id="nome" name="nome" type="text" placeholder="Nome completo" class="form-control input-md" required="">
-          <span class="help-block">O nome do convite conta apenas como 1 convidado.  Se o nome do convite é de um casal (exemplo: Rafael e Jordana), coloque a segunda pessoa como acompanhante. Assim, você terá a confirmação de 2 convidados.</span>
-          </div>
+      <div class="col-lg-8 text-center vcenter">
+        <div id="success" style="width: 100%">
+          <p class="text-justify"><strong>Recebemos a sua confirmação! Obrigado!</strong> Se os planos mudarem ou você tiver qualquer dúvida entre em contato com nossa cerimonialista pelo e-mail ou pelo telefone informados. Confira abaixo os dados enviados da sua confirmação.</p>
+          <dl>
+            <dt>Nome</dt>
+            <dd id="nome"></dd>
+            <dt>Adultos acompanhantes</dt>
+            <dd id="adultos"></dd>
+            <dt>Crianças acompanhantes</dt>
+            <dd id="criancas"></dd>
+            <dt>E-mail</dt>
+            <dd id="email"></dd>
+            <dt>Telefone</dt>
+            <dd id="telefone"></dd>
+          </dl>
         </div>
-
-        <!-- Select Basic -->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="adultos">Além de você, quantos adultos acompanham?</label>
-          <div class="col-md-2">
-            <select id="adultos" name="adultos" class="form-control">
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-            </select>
-          </div>
+        <div id="fail" style="width: 100%">
+          <p class="text-justify"><strong>Atenção: ocorreu um problema e não conseguimos enviar a sua confirmação.</strong> Por favor, tente novamente. Caso o problema persista, tente fazer a confirmação diretamente por telefone ou por e-mail.</p>
+          <button id="voltar" class="btn btn-default btn-xl">Voltar para o formulário</button>
         </div>
-
-        <!-- Select Basic -->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="criancas">Quantas crianças acompanhantes comparecerão?</label>
-          <div class="col-md-2">
-            <select id="criancas" name="criancas" class="form-control">
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
+        <div id="confirmacao" style="width: 100%">
+          <form id="formulario" class="form-horizontal" action="//formspree.io/gtaschetto@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Casamento Lí e Gui - Nova confirmação!" />
+          <input type="hidden" name="_cc" value="gtaschetto@gmail.com" />
+          <input type="text" name="_gotcha" style="display:none" />
+          <fieldset>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="nome">Qual o nome que está no convite?</label>
+            <div class="col-md-6">
+            <input id="nome" name="nome" type="text" placeholder="Nome conforme consta no convite" class="form-control input-md" required="" minlength="10">
+            </div>
           </div>
-        </div>
 
-        <!-- Text input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="email">Qual o seu e-mail?</label>
-          <div class="col-md-5">
-          <input id="email" name="email" type="text" placeholder="nome@email.com" class="form-control input-md" required="">
+          <!-- Select Basic -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="adultos">Quantos adultos comparecerão?</label>
+            <div class="col-md-2">
+              <select id="adultos" name="adultos" class="form-control">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </div>
           </div>
-        </div>
 
-        <!-- Text input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="telefone">Qual o seu telefone?</label>
-          <div class="col-md-4">
-          <input id="telefone" name="telefone" type="text" placeholder="(51) 9999-9999" class="form-control input-md" required="">
+          <!-- Select Basic -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="criancas">Quantas crianças comparecerão?</label>
+            <div class="col-md-2">
+              <select id="criancas" name="criancas" class="form-control">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
           </div>
-        </div>
 
-        <!-- Button -->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="enviar"></label>
-          <div class="col-md-4">
-            <button id="enviar" name="enviar" class="btn btn-primary">Confirmar Presença</button>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="email">Qual o seu e-mail?</label>
+            <div class="col-md-5">
+            <input id="email" name="email" type="email" placeholder="nome@email.com" class="form-control input-md" required="">
+            </div>
           </div>
-        </div>
 
-        </fieldset>
-        </form>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="telefone">Qual o seu telefone?</label>
+            <div class="col-md-4">
+            <input id="telefone" name="telefone" type="text" placeholder="(51) 9999-9999" class="form-control input-md" required="">
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="enviar"></label>
+            <div class="col-md-4">
+              <button id="enviar" name="enviar" class="btn btn-primary">Confirmar Presença</button>
+            </div>
+          </div>
+
+          </fieldset>
+          </form>
+        </div>
       </div>
     </div>
   </div>
