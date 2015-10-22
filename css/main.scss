@@ -78,7 +78,8 @@ small, .small {
 /* Cabeçalho */
 
 header {
-    background-image: url(/img/header.jpg);
+    background-image: url(/img/carousel/000003.jpg);
+    background-position: right;
 }
 
 header .header-content .header-content-inner h1 {
@@ -240,8 +241,6 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
     font-size: 22px;
   }
 }
-
-/**/
 
 dl {
         width: 100%;
