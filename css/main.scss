@@ -78,8 +78,7 @@ small, .small {
 /* Cabeçalho */
 
 header {
-    background-image: url(/img/carousel/000003.jpg);
-    background-position: right;
+  background-image: url(/img/carousel/000008.jpg);
 }
 
 header .header-content .header-content-inner h1 {
@@ -239,6 +238,13 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 @media(min-width:768px) {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
+  }
+}
+
+@media(max-width:494px) {
+  header {
+    background-image: url(/img/carousel/000003.jpg) !important;
+    background-position: right !important;
   }
 }
 
