@@ -22,14 +22,13 @@
               lng: -51.172325,
               title: 'Lima',
               infoWindow: {
-                content: '<p>HTML Content</p>'
+                content: '<p>Palatus Eventos</p><p>Dentro do campus da PUCRS. Entrada pelo Colégio Champagnat.</p>'
               },
               click: function(e) {
                 map.setCenter(-30.0611096, -51.172325);
               }
             });
 
-            // Carousel Auto-Cycle
             $(document).ready(function() {
               var c = $('#carousel');
               c.carousel({
@@ -46,8 +45,23 @@
                 $("#fail").toggle();
             });
 
+            jQuery.extend(jQuery.validator.messages, {
+                required: "Por favor, preencha este campo obrigatório.",
+                email: "Por favor, informe um endereço de e-mail válido.",
+                minlength: jQuery.validator.format("Por favor, informe um nome com no mínimo {0} caracteres."),
+            });
+
             var form = $("#formulario");
-            form.validate();
+            form.validate({
+              errorClass: "has-error",
+              validClass: "has-success",
+              highlight: function( element, errorClass, validClass ) {
+                $(element).parent().parent().addClass(errorClass).removeClass(validClass);
+              },
+              unhighlight: function( element, errorClass, validClass ) {
+                $(element).parent().parent().removeClass(errorClass).addClass(validClass);
+              }
+            });
 
             form.submit(function(event) {
               if (!form.valid()) return;
