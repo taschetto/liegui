@@ -162,8 +162,8 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 .carousel-indicators li.active,
 .carousel-indicators li {
   border: 0;
-  width: 16px;
-  height: 16px;
+  width: 8px;
+  height: 8px;
 }
 
 .carousel-indicators li {
@@ -238,13 +238,6 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 @media(min-width:768px) {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
-  }
-}
-
-@media(max-width:494px) {
-  header {
-    background-image: url(/img/carousel/000003.jpg) !important;
-    background-position: right !important;
   }
 }
 
