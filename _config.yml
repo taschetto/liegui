@@ -8,7 +8,7 @@ github_username:  jekyll
 
 share_title: Lívia & Guilherme vão se casar!
 share_description: Site oficial do Casamento da Lí e do Gui!
-share_image: img/share.jpg
+share_image: /img/share.jpg
 
 # Google Maps and contact information
 latitude: -30.010932094173654
